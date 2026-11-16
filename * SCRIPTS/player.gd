@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 3.5
+const SPEED = 7.0
+const JUMP_VELOCITY = 4.5
 
 @export var camera : Camera3D
 @onready var raycast : RayCast3D = $Camera3D/InteractionRay
