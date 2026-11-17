@@ -10,3 +10,6 @@ func _process(_delta: float) -> void:
 	# $DirectionalLight3D_SKY.light_energy
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
+
+
+# - - - - - - - - - - - - - - - - -

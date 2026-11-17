@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://iiijr2s5vurl" path="res://* SCENES/home.tscn" id="3_sqipc"]
 [ext_resource type="PackedScene" uid="uid://b5uivmdc2126s" path="res://* SCENES/tutorial.tscn" id="4_n84p2"]
 [ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="6_gr1gh"]
+[ext_resource type="Script" uid="uid://bs861ue7wjqnp" path="res://* SCRIPTS/boba_mariposa.gd" id="6_n84p2"]
 [ext_resource type="PackedScene" uid="uid://bkhwgs4e3kc7n" path="res://* SCENES/Inventory.tscn" id="13_g3726"]
 [ext_resource type="Texture2D" uid="uid://bx7x4cx54iejx" path="res://* FILES/Art/idle.png" id="13_tyvbh"]
 
@@ -42,34 +43,44 @@ script = ExtResource("1_cjmda")
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1628250777]
 
-[node name="Player" parent="Node3D" unique_id=2095125557 instance=ExtResource("1_x85m2")]
-transform = Transform3D(-0.87009776, 0, -0.49287927, 0, 1, 0, 0.49287927, 0, -0.87009776, -4.670453, 1.2669444, -2.0751076)
+[node name="environment" type="Node3D" parent="Node3D" unique_id=2120034415]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D" unique_id=1200743644]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D/environment" unique_id=1200743644]
 environment = SubResource("Environment_u40ja")
 
-[node name="DirectionalLight3D_SKY" type="DirectionalLight3D" parent="Node3D" unique_id=1984441127]
+[node name="DirectionalLight3D_SKY" type="DirectionalLight3D" parent="Node3D/environment" unique_id=1984441127]
 transform = Transform3D(0.24778564, -0.70421034, 0.6653496, -0.93021435, 0.018990839, 0.36652505, -0.27074626, -0.7097374, -0.6503609, 0, 6.053662, 0)
 light_indirect_energy = 1.5
 light_volumetric_fog_energy = 4.0
 sky_mode = 2
 
-[node name="DirectionalLight3D_SUN" type="DirectionalLight3D" parent="Node3D" unique_id=22898559]
-transform = Transform3D(0.24778566, -0.7042104, 0.66534954, -0.624372, 0.40904665, 0.6654626, -0.7407847, -0.58031774, -0.33833334, 0, 6.053662, 0)
+[node name="DirectionalLight3D_SUN" type="DirectionalLight3D" parent="Node3D/environment" unique_id=22898559]
+transform = Transform3D(0.24778566, -0.7042104, 0.6653496, -0.624372, 0.40904665, 0.6654626, -0.7407847, -0.58031774, -0.3383333, 0, 6.053662, 0)
 light_color = Color(0.82989544, 0.83610433, 0.6535878, 1)
 light_indirect_energy = 1.5
 light_volumetric_fog_energy = 4.0
 shadow_enabled = true
 sky_mode = 1
 
+[node name="Player" parent="Node3D" unique_id=2095125557 instance=ExtResource("1_x85m2")]
+transform = Transform3D(-0.87009776, 0, -0.49287927, 0, 1, 0, 0.49287927, 0, -0.87009776, -4.670453, 1.2669444, -2.0751076)
+
 [node name="home" parent="Node3D" unique_id=1731318775 instance=ExtResource("3_sqipc")]
 
 [node name="tutorial" parent="Node3D" unique_id=963639456 instance=ExtResource("4_n84p2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 
-[node name="bovril" type="Sprite3D" parent="Node3D" unique_id=641416800]
+[node name="boba_mariposa" type="Sprite3D" parent="Node3D" unique_id=641416800]
 transform = Transform3D(0.13680807, 0, 0.37587705, 0, 0.39999998, 0, -0.37587705, 0, 0.13680807, -5.8, 2, 1.15)
 texture = ExtResource("13_tyvbh")
+script = ExtResource("6_n84p2")
+
+[node name="name" type="Label3D" parent="Node3D/boba_mariposa" unique_id=221748834]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 0.99999994, 0, -2.9802322e-08, 0, 1, 0, 3.2020206, 0)
+billboard = 1
+text = "Dr Mariposa"
+font = ExtResource("6_gr1gh")
+font_size = 47
 
 [node name="Node2D" type="Control" parent="." unique_id=1044392103]
 layout_mode = 3

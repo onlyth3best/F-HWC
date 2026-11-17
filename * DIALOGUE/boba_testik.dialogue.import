@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cysididw1pnsy"
+path="res://.godot/imported/boba_testik.dialogue-3068e9a0331dd99c5a82ac7d2d39ffd6.tres"
+
+[deps]
+
+source_file="res://* DIALOGUE/boba_testik.dialogue"
+dest_files=["res://.godot/imported/boba_testik.dialogue-3068e9a0331dd99c5a82ac7d2d39ffd6.tres"]
+
+[params]
+
+defaults=true
