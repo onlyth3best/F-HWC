@@ -5,7 +5,9 @@ const JUMP_VELOCITY = 4.5
 
 @export var camera : Camera3D
 @onready var raycast : RayCast3D = $Camera3D/InteractionRay
+@onready var actionable_finder : Area3D = $Direction/ActionableFinder
 var current_interactable = null
+
 
 var cursor_locked = true
 var mouse_sensitivity := 0.1
@@ -26,7 +28,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jumpppp.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
@@ -45,6 +47,11 @@ func _physics_process(delta: float) -> void:
 	# testing…
 	check_hover_collision()
 
+
+
+
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		rotation_y -= event.relative.x * mouse_sensitivity
@@ -54,6 +61,16 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 		rotation_degrees.y = rotation_y
 		camera.rotation_degrees.x = rotation_x
+	#testing dialogue look heree!! !! ! !  ! ! ! !! !!  ! ! ! ! !!  !! !! !!! ! !  ! !
+	if Input.is_action_just_pressed("ui_accept"):
+		var actionables = actionable_finder.get_overlapping_areas()
+		if actionables.size() > 0:
+			actionables[0].action()
+			return
+
+
+
+
 
 #testing…
 func check_hover_collision():

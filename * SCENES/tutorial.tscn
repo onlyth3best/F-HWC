@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://b5uivmdc2126s"]
 
-[ext_resource type="PackedScene" uid="uid://b8hs0fbufkln8" path="res://* SCENES/Furniture/shelfset1.tscn" id="1_t223r"]
+[ext_resource type="PackedScene" uid="uid://b8hs0fbufkln8" path="res://* FILES/Models/Furniture/shelfset1.tscn" id="1_t223r"]
 [ext_resource type="Texture2D" uid="uid://bso0f5ggsj4x1" path="res://* FILES/Models/cardboard_boxes/textures/Cardboard_baseColor.png" id="2_lddj5"]
 [ext_resource type="Script" uid="uid://cwm4uyr5yj4ge" path="res://* SCRIPTS/box_3.gd" id="3_a1f26"]
 [ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="4_put0n"]

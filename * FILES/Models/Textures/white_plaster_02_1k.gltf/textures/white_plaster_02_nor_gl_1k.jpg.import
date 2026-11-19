@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cooijkxxm8lw6"
-path.s3tc="res://.godot/imported/white_plaster_02_diff_1k.jpg-b30f630d00d8d46bc5a6c90b0ee9abad.s3tc.ctex"
+uid="uid://ctja54og0x87e"
+path.s3tc="res://.godot/imported/white_plaster_02_nor_gl_1k.jpg-f43554589aa8ed62907e74ff80c13b45.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://* FILES/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_diff_1k.jpg"
-dest_files=["res://.godot/imported/white_plaster_02_diff_1k.jpg-b30f630d00d8d46bc5a6c90b0ee9abad.s3tc.ctex"]
+source_file="res://* FILES/Models/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_nor_gl_1k.jpg"
+dest_files=["res://.godot/imported/white_plaster_02_nor_gl_1k.jpg-f43554589aa8ed62907e74ff80c13b45.s3tc.ctex"]
 
 [params]
 
@@ -27,7 +27,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://* FILES/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_diff_1k.jpg"
+roughness/src_normal="res://* FILES/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_nor_gl_1k.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

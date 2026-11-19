@@ -38,13 +38,18 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://add
 folder_colors={
 "res://* DIALOGUE/": "orange",
 "res://* FILES/": "orange",
+"res://* FILES/Art/": "yellow",
+"res://* FILES/Misc/": "yellow",
+"res://* FILES/Models/": "yellow",
+"res://* FILES/Models/Textures/white_plaster_02_1k.gltf/": "yellow",
 "res://* FILES/Models/cardboard_boxes/": "yellow",
 "res://* FILES/Models/garage_door_01/": "yellow",
 "res://* FILES/Models/hanging_industrial_lamp_1k.gltf/": "yellow",
 "res://* FILES/Models/low-poly_psx_style_garage_doors_pack/": "yellow",
 "res://* FILES/Models/red_button/": "yellow",
-"res://* FILES/Textures/white_plaster_02_1k.gltf/": "yellow",
+"res://* FILES/Sound/": "yellow",
 "res://* SCENES/": "orange",
+"res://* SCENES/CHARACTERS/": "yellow",
 "res://* SCRIPTS/": "orange"
 }
 
@@ -54,6 +59,18 @@ theme/default_font_multichannel_signed_distance_field=true
 
 [input]
 
+ui_accept={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194310,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+ui_select={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":3,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
 move_left={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
@@ -94,7 +111,16 @@ inventory={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":73,"key_label":0,"unicode":105,"location":0,"echo":false,"script":null)
 ]
 }
+jump={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
+]
+}
 
 [internationalization]
 
 locale/translations_pot_files=PackedStringArray("res://* DIALOGUE/boba_testik.dialogue")
+
+[layer_names]
+
+3d_physics/layer_5="Actionables"

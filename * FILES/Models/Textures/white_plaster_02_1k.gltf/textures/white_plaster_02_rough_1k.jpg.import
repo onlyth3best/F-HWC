@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctja54og0x87e"
-path.s3tc="res://.godot/imported/white_plaster_02_nor_gl_1k.jpg-e79e0f3d6968fd42d9f3419c88b51160.s3tc.ctex"
+uid="uid://qmpo062jgahc"
+path.s3tc="res://.godot/imported/white_plaster_02_rough_1k.jpg-205c0483f3c4d8a20836d4adf3487fc8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://* FILES/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_nor_gl_1k.jpg"
-dest_files=["res://.godot/imported/white_plaster_02_nor_gl_1k.jpg-e79e0f3d6968fd42d9f3419c88b51160.s3tc.ctex"]
+source_file="res://* FILES/Models/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_rough_1k.jpg"
+dest_files=["res://.godot/imported/white_plaster_02_rough_1k.jpg-205c0483f3c4d8a20836d4adf3487fc8.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://* FILES/Textures/white_plaster_02_1k.gltf/textures/white_plaster_02_nor_gl_1k.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

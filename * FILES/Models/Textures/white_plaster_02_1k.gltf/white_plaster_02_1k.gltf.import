@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c5vda2muolipf"
-path="res://.godot/imported/white_plaster_02_1k.gltf-780bd81c82704cd69842521a3450dc15.scn"
+path="res://.godot/imported/white_plaster_02_1k.gltf-f6f93cd4cbf3661e352265c0d47b9609.scn"
 
 [deps]
 
-source_file="res://* FILES/Textures/white_plaster_02_1k.gltf/white_plaster_02_1k.gltf"
-dest_files=["res://.godot/imported/white_plaster_02_1k.gltf-780bd81c82704cd69842521a3450dc15.scn"]
+source_file="res://* FILES/Models/Textures/white_plaster_02_1k.gltf/white_plaster_02_1k.gltf"
+dest_files=["res://.godot/imported/white_plaster_02_1k.gltf-f6f93cd4cbf3661e352265c0d47b9609.scn"]
 
 [params]
 

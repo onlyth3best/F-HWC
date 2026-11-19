@@ -4,10 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://7pef1c6hv61k" path="res://* SCENES/Player.tscn" id="1_x85m2"]
 [ext_resource type="PackedScene" uid="uid://iiijr2s5vurl" path="res://* SCENES/home.tscn" id="3_sqipc"]
 [ext_resource type="PackedScene" uid="uid://b5uivmdc2126s" path="res://* SCENES/tutorial.tscn" id="4_n84p2"]
+[ext_resource type="PackedScene" uid="uid://csvncyv4r1qn3" path="res://* SCENES/CHARACTERS/boba_mariposa.tscn" id="5_n84p2"]
+[ext_resource type="PackedScene" uid="uid://cwhaqhejdj4ms" path="res://* SCENES/actionable.tscn" id="6_cf7q6"]
 [ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="6_gr1gh"]
-[ext_resource type="Script" uid="uid://bs861ue7wjqnp" path="res://* SCRIPTS/boba_mariposa.gd" id="6_n84p2"]
+[ext_resource type="Resource" uid="uid://cysididw1pnsy" path="res://* DIALOGUE/boba_testik.dialogue" id="7_cf7q6"]
 [ext_resource type="PackedScene" uid="uid://bkhwgs4e3kc7n" path="res://* SCENES/Inventory.tscn" id="13_g3726"]
-[ext_resource type="Texture2D" uid="uid://bx7x4cx54iejx" path="res://* FILES/Art/idle.png" id="13_tyvbh"]
 
 [sub_resource type="Gradient" id="Gradient_x85m2"]
 offsets = PackedFloat32Array(0.13986014, 1)
@@ -37,6 +38,8 @@ ssao_radius = 0.5
 ssil_enabled = true
 adjustment_enabled = true
 adjustment_color_correction = SubResource("GradientTexture1D_i8w0n")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tyfq0"]
 
 [node name="main" type="Node" unique_id=1643278145]
 script = ExtResource("1_cjmda")
@@ -70,17 +73,15 @@ transform = Transform3D(-0.87009776, 0, -0.49287927, 0, 1, 0, 0.49287927, 0, -0.
 [node name="tutorial" parent="Node3D" unique_id=963639456 instance=ExtResource("4_n84p2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
 
-[node name="boba_mariposa" type="Sprite3D" parent="Node3D" unique_id=641416800]
-transform = Transform3D(0.13680807, 0, 0.37587705, 0, 0.39999998, 0, -0.37587705, 0, 0.13680807, -5.8, 2, 1.15)
-texture = ExtResource("13_tyvbh")
-script = ExtResource("6_n84p2")
+[node name="boba_mariposa" parent="Node3D" unique_id=959479342 instance=ExtResource("5_n84p2")]
+transform = Transform3D(0.13680807, 0, 0.37587705, 0, 0.39999998, 0, -0.37587705, 0, 0.13680807, -5.8, 1.4173172, 1.15)
 
-[node name="name" type="Label3D" parent="Node3D/boba_mariposa" unique_id=221748834]
-transform = Transform3D(1, 0, 2.9802322e-08, 0, 0.99999994, 0, -2.9802322e-08, 0, 1, 0, 3.2020206, 0)
-billboard = 1
-text = "Dr Mariposa"
-font = ExtResource("6_gr1gh")
-font_size = 47
+[node name="Actionable" parent="Node3D/boba_mariposa" unique_id=1789794664 instance=ExtResource("6_cf7q6")]
+dialogue_resource = ExtResource("7_cf7q6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/boba_mariposa/Actionable" unique_id=1868905870]
+transform = Transform3D(6.35, 0, 0, 0, 6.35, 0, 0, 0, 6.35, 0, 0, 0)
+shape = SubResource("SphereShape3D_tyfq0")
 
 [node name="Node2D" type="Control" parent="." unique_id=1044392103]
 layout_mode = 3

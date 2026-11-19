@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://csvncyv4r1qn3"]
+
+[ext_resource type="Texture2D" uid="uid://bx7x4cx54iejx" path="res://* FILES/Art/idle.png" id="1_3bnpi"]
+[ext_resource type="Script" uid="uid://bs861ue7wjqnp" path="res://* SCRIPTS/boba_mariposa.gd" id="2_m7yji"]
+[ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="3_hhq7y"]
+
+[node name="boba_mariposa" type="Sprite3D" unique_id=959479342]
+transform = Transform3D(0.13680807, 0, 0.37587705, 0, 0.39999998, 0, -0.37587705, 0, 0.13680807, 0, 0, 0)
+billboard = 2
+texture = ExtResource("1_3bnpi")
+script = ExtResource("2_m7yji")
+
+[node name="name" type="Label3D" parent="." unique_id=86473050]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 0.99999994, 0, -2.9802322e-08, 0, 1, 0, 3.2020206, 0)
+billboard = 1
+text = "Dr Mariposa"
+font = ExtResource("3_hhq7y")
+font_size = 47

@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dqyvxhp7gwg6m" path="res://* SCRIPTS/redButton.gd" id="4_hntm4"]
 [ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="5_32u0l"]
 [ext_resource type="PackedScene" uid="uid://dguukfci5bwt3" path="res://* FILES/Models/red_button/scene.gltf" id="6_ag0pp"]
-[ext_resource type="PackedScene" uid="uid://dj1kv2xxrc3q7" path="res://* SCENES/Furniture/table.tscn" id="7_bi8ob"]
+[ext_resource type="PackedScene" uid="uid://dj1kv2xxrc3q7" path="res://* FILES/Models/Furniture/table.tscn" id="7_bi8ob"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x85m2"]
 size = Vector3(15, 0.5, 15)
