@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="5_32u0l"]
 [ext_resource type="PackedScene" uid="uid://dguukfci5bwt3" path="res://* FILES/Models/red_button/scene.gltf" id="6_ag0pp"]
 [ext_resource type="PackedScene" uid="uid://dj1kv2xxrc3q7" path="res://* FILES/Models/Furniture/table.tscn" id="7_bi8ob"]
+[ext_resource type="PackedScene" uid="uid://blin8o7cwcrut" path="res://* SCENES/portal.tscn" id="8_kplml"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x85m2"]
 size = Vector3(15, 0.5, 15)
@@ -353,3 +354,6 @@ spot_angle = 23.0
 
 [node name="Table" parent="." unique_id=1577445098 instance=ExtResource("7_bi8ob")]
 transform = Transform3D(0, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, 0, 6, -0.0033601746, -3.3)
+
+[node name="portal" parent="." unique_id=1251403833 instance=ExtResource("8_kplml")]
+transform = Transform3D(-2, 0, -3.019916e-07, 0, 2, 0, 3.019916e-07, 0, -2, -0.51444334, 3.1789021, -5.873088)

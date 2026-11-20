@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://blin8o7cwcrut"]
 
+[ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="1_2ebms"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ej3mm"]
 size = Vector3(2.5, 1.5, 0.1)
 
@@ -15,10 +17,32 @@ size = Vector3(2.5, 0.1, 0.2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_evtce"]
 size = Vector3(2.25, 1.25, 0.13)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_tyfq0"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_evtce"]
 viewport_path = NodePath("SubViewport")
 
 [node name="portal" type="Node3D" unique_id=1251403833]
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1863350268]
+handle_input_locally = false
+use_taa = true
+size = Vector2i(1152, 648)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="CanvasLayer" type="CanvasLayer" parent="SubViewport" unique_id=1023823331]
+
+[node name="Label" type="Label" parent="SubViewport/CanvasLayer" unique_id=767876082]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 100)
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_2ebms")
+theme_override_font_sizes/font_size = 48
+text = "FRAGILE: HANDLE WITH (S)CARE"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="mainframe" type="StaticBody3D" parent="." unique_id=1509367563]
 
@@ -51,16 +75,8 @@ mesh = SubResource("BoxMesh_13xo1")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="screen" unique_id=1964394446]
 shape = SubResource("BoxShape3D_evtce")
 
-[node name="Sprite3D" type="Sprite3D" parent="screen" unique_id=1284407105]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.051009953)
+[node name="Sprite3D" type="Sprite3D" parent="screen" unique_id=315013693]
+transform = Transform3D(0.19, 0, 0, 0, 0.19, 0, 0, 0, 0.19, 0, 0, -0.055)
 flip_h = true
-texture = SubResource("ViewportTexture_tyfq0")
-
-[node name="SubViewport" type="SubViewport" parent="." unique_id=1827706282]
-disable_3d = true
-size = Vector2i(240, 140)
-
-[node name="Label" type="Label" parent="SubViewport" unique_id=479930269]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "hehehjhdsjhdjs"
+texture_filter = 0
+texture = SubResource("ViewportTexture_evtce")
