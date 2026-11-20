@@ -57,7 +57,7 @@ light_indirect_energy = 1.5
 light_volumetric_fog_energy = 4.0
 sky_mode = 2
 
-[node name="DirectionalLight3D_SUN" type="DirectionalLight3D" parent="Node3D/environment" unique_id=22898559]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D/environment" unique_id=22898559]
 transform = Transform3D(0.24778566, -0.7042104, 0.6653496, -0.624372, 0.40904665, 0.6654626, -0.7407847, -0.58031774, -0.3383333, 0, 6.053662, 0)
 light_color = Color(0.82989544, 0.83610433, 0.6535878, 1)
 light_indirect_energy = 1.5

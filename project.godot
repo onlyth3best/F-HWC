@@ -23,6 +23,10 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 InventoryHandler="*res://* SCRIPTS/inventory_handler.gd"
 DialogueManager="*uid://c3rodes2l3gxb"
 
+[dialogue_manager]
+
+runtime/balloon_path="res://* DIALOGUE/balloon.tscn"
+
 [display]
 
 window/size/window_width_override=2304
