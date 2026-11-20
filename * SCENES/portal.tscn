@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://blin8o7cwcrut"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ej3mm"]
+size = Vector3(2.5, 1.5, 0.1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ebms"]
+size = Vector3(2.5, 1.5, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bw7a8"]
+size = Vector3(2.5, 0.1, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_13xo1"]
+size = Vector3(2.5, 0.1, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_evtce"]
+size = Vector3(2.25, 1.25, 0.13)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_tyfq0"]
+viewport_path = NodePath("SubViewport")
+
+[node name="portal" type="Node3D" unique_id=1251403833]
+
+[node name="mainframe" type="StaticBody3D" parent="." unique_id=1509367563]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mainframe" unique_id=734619693]
+shape = SubResource("BoxShape3D_ej3mm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="mainframe" unique_id=1511152332]
+mesh = SubResource("BoxMesh_2ebms")
+
+[node name="frame1" type="StaticBody3D" parent="." unique_id=1361077519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7030678, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="frame1" unique_id=2004273283]
+shape = SubResource("BoxShape3D_bw7a8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="frame1" unique_id=1269888050]
+mesh = SubResource("BoxMesh_13xo1")
+
+[node name="frame2" type="StaticBody3D" parent="." unique_id=938141875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7153456, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="frame2" unique_id=233525678]
+shape = SubResource("BoxShape3D_bw7a8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="frame2" unique_id=814249367]
+mesh = SubResource("BoxMesh_13xo1")
+
+[node name="screen" type="StaticBody3D" parent="." unique_id=645978686]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="screen" unique_id=1964394446]
+shape = SubResource("BoxShape3D_evtce")
+
+[node name="Sprite3D" type="Sprite3D" parent="screen" unique_id=1284407105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.051009953)
+flip_h = true
+texture = SubResource("ViewportTexture_tyfq0")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1827706282]
+disable_3d = true
+size = Vector2i(240, 140)
+
+[node name="Label" type="Label" parent="SubViewport" unique_id=479930269]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "hehehjhdsjhdjs"
