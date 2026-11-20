@@ -5,15 +5,16 @@
 [ext_resource type="FontFile" uid="uid://74wibw1jn5op" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437 Win.ttf" id="1_hb0tv"]
 [ext_resource type="Script" uid="uid://dljn0ftgbaum5" path="res://* SCRIPTS/slotStuff.gd" id="2_4fn2y"]
 [ext_resource type="FontFile" uid="uid://bv2rlfe1s3opa" path="res://* FILES/Misc/perfect_dos_vga_437/Perfect DOS VGA 437.ttf" id="2_6nbai"]
+[ext_resource type="FontFile" uid="uid://w8v71bd8gbeb" path="res://* FILES/Misc/pixelated-times-new-roman.otf/pixelated-times-new-roman.otf" id="4_1p0dn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_114s7"]
 bg_color = Color(0, 0, 0, 0.29411766)
 corner_radius_top_right = 7
 corner_radius_bottom_left = 7
 
-[sub_resource type="Theme" id="Theme_d0y1t"]
-default_font = ExtResource("1_hb0tv")
-default_font_size = 14
+[sub_resource type="Theme" id="Theme_xi2d5"]
+default_font = ExtResource("4_1p0dn")
+default_font_size = 22
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2wdq"]
 bg_color = Color(0.054142185, 0.05414217, 0.05414217, 1)
@@ -85,7 +86,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"
@@ -108,7 +109,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"
@@ -131,7 +132,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"
@@ -154,7 +155,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"
@@ -177,7 +178,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"
@@ -200,7 +201,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"
@@ -223,7 +224,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-theme = SubResource("Theme_d0y1t")
+theme = SubResource("Theme_xi2d5")
 theme_override_colors/default_color = Color(1, 1, 1, 0.90588236)
 bbcode_enabled = true
 text = "[empty]"

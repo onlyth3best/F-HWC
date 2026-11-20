@@ -13,6 +13,8 @@ script = ExtResource("2_m7yji")
 [node name="name" type="Label3D" parent="." unique_id=86473050]
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 0.99999994, 0, -2.9802322e-08, 0, 1, 0, 3.2020206, 0)
 billboard = 1
+modulate = Color(0.8994205, 0.67285764, 0.76941824, 1)
 text = "Dr Mariposa"
 font = ExtResource("3_hhq7y")
 font_size = 47
+outline_size = 1
